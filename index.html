@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="author" content="author" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meteo Simplon</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="weather-info">
+          <fieldset>
+            <div class="div-form">
+              <label for="city" class="label-input" id="city-label">
+                <input
+                  type="text"
+                  class="city"
+                  id="city"
+                  placeholder="Enter your city"
+                  required
+                />
+              </label>
+              <button id="submit" class="submit-button">Submit</button>
+            </div>
+          </fieldset>
+
+          <h1>Météo à Jakarta</h1>
+          <p><strong>30.16°C</strong></p>
+          <p>Brouillard</p>
+          <p>Humidité: 84%</p>
+          <p>Vitesse du vent: 3.09 km/h</p>
+        </div>
+      </div>
+    </div>
+    <script defer src="meteo.js"></script>
+  </body>
+</html>
