@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#submit").addEventListener("click", function () {
+  document.querySelector("#submit").addEventListener("click", function (e) {
     let inputCity = document.getElementById("search-city").value;
     fetchingOpenWeatherApi(inputCity);
+    document.getElementById("search-city").value = ""; // Vider le champ de saisie ici
   });
 
   document
-    .getElementById("search-city")
+    .querySelector("#search-city")
     .addEventListener("keydown", function (e) {
       if (e.key === "Enter") {
         e.preventDefault(); // Empêche le rechargement de la page
         let inputCity = e.target.value;
         fetchingOpenWeatherApi(inputCity);
+        document.getElementById("search-city").value = ""; // Vider le champ de saisie ici
       }
     });
 });
