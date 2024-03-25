@@ -20,7 +20,7 @@
                 <input
                   type="text"
                   class="city"
-                  id="city"
+                  id="search-city"
                   placeholder="Enter your city"
                   required
                 />
@@ -28,15 +28,14 @@
               <button id="submit" class="submit-button">Submit</button>
             </div>
           </fieldset>
-
-          <h1>Météo à Jakarta</h1>
-          <p><strong>30.16°C</strong></p>
-          <p>Brouillard</p>
-          <p>Humidité: 84%</p>
-          <p>Vitesse du vent: 3.09 km/h</p>
+          <h1>Météo à <span class="villeMeteo">Indonesia</span></h1 >
+          <p class="temperature">Témperature <strong>26.41°C</strong></p>
+          <p class="situation">Situation: <strong>moderate rain</strong></p>
+          <p>Humidité: <span class="humidite"><strong>99%</strong></span></p>
+          <p >Vitesse du vent: <span class="vitesse"><strong>0.43</span> km/h</strong></p>
         </div>
       </div>
     </div>
-    <script defer src="meteo.js"></script>
+    <script defer type="module" src="meteo.js"></script>
   </body>
 </html>
